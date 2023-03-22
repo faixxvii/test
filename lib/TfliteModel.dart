@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -33,18 +32,19 @@ class _TfliteModelState extends State<TfliteModel> {
 
   Future imageClassification(File image)
   async {
-    final List? recognitions = await Tflite.runModelOnImage(
+    /*final List? recognitions = await Tflite.runModelOnImage(
       path: image.path,
-      numResults: 6,
-      threshold: 0.05,
-      imageMean: 127.5,
-      imageStd: 127.5,
+      //numResults: 6,
+      //threshold: 0.05,
+      //imageMean: 127.5,
+      //imageStd: 127.5,
     );
     setState(() {
       _results=recognitions!;
       _image=image;
       imageSelect=true;
-    });
+    });*/
+    
   }
   @override
   Widget build(BuildContext context) {
